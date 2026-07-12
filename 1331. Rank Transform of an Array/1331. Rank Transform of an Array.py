@@ -14,4 +14,16 @@ class Solution:
 
         
 
+#solution 2
+class Solution:
+    def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        rank={}
+
+        for i, value in enumerate(sorted(set(arr)),1):
+            rank[value]=i
+        
+        return [rank[value] for value in arr]
+
+        
+
         
